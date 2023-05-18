@@ -5,8 +5,7 @@ public static void main(String args[]) throws Exception{
 ServerSocket ss=new ServerSocket(2000);
 Socket sk=ss.accept();
 BufferedReader cin=new BufferedReader(new InputStreamReader(sk.getInputStream()));
-PrintStream cout=new
-PrintStream(sk.getOutputStream());
+PrintStream cout=new PrintStream(sk.getOutputStream());
 BufferedReader stdin=new BufferedReader(new InputStreamReader(System.in));
 String s;
 while(true){
