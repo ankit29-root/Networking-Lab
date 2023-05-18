@@ -4,9 +4,7 @@ public class tracert {
 public static void SystemCommand(String Command){
 try{
 Process p=Runtime.getRuntime().exec(Command);
-BufferedReader InputStream=new
-BufferedReader(new
-InputStreamReader(p.getInputStream()));
+BufferedReader InputStream=new BufferedReader(new InputStreamReader(p.getInputStream()));
 String s=" ";
 while((s=InputStream.readLine())!=null){
 System.out.println(s);
