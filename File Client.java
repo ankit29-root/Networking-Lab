@@ -2,7 +2,7 @@ import java.net.*;
 import java.io.*;
 public class FileClient {
 public static void main(String[] args) throws
-IOException {
+IOException{
 Socket socket=null;
 try{
 socket=new Socket("localhost",8888);
